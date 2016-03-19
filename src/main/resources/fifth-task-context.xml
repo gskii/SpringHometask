@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+>
+    <bean id="slave" class="ru.ncedu.model.Slave" p:name="Slave"/>
+    <bean id="master1" class="ru.ncedu.model.Master" autowire="constructor"/>
+    <bean id="master2" class="ru.ncedu.model.Master" autowire="byName"/>
+    <bean id="master3" class="ru.ncedu.model.Master" autowire="byType"/>
+    <bean id="master4" class="ru.ncedu.model.Master" autowire="no"/>
+
+</beans>
